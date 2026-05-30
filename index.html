@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern responsive landing page built with HTML, CSS, and JS.">
+    <title>Responsive Landing Page</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Responsive<span>Pro</span></a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="admin/dashboard.html" class="admin-link">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero section">
+        <div class="container hero-content">
+            <h1 class="hero-title">Build Beautiful Responsive Websites With Modern Web Technologies</h1>
+            <p class="hero-subtitle">Create stunning, fast, and accessible digital experiences that look amazing on
+                every device.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2 class="section-title">About Our Mission</h2>
+                <p>We are dedicated to building high-quality software solutions that scale. Our mission is to empower
+                    businesses with cutting-edge technology that is both beautiful and functional.</p>
+                <p>With a focus on performance, accessibility, and modern design principles, we ensure your digital
+                    presence stands out in today's competitive landscape.</p>
+            </div>
+            <div class="about-image">
+                <div class="image-placeholder">
+                    <span>🚀</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section bg-darker">
+        <div class="container">
+            <h2 class="section-title center">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Custom, responsive websites built with modern frameworks and vanilla technologies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Intuitive and engaging user interfaces focused on maximizing conversion rates.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">⚙️</div>
+                    <h3>Backend Integration</h3>
+                    <p>Robust and secure API integrations to power your front-end applications.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">☁️</div>
+                    <h3>Cloud Deployment</h3>
+                    <p>Scalable hosting solutions using modern platforms like Vercel and AWS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+        <div class="container">
+            <h2 class="section-title center">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h4>📱 Responsive Design</h4>
+                    <p>Looks perfect on mobile, tablet, and desktop.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>⚡ Fast Performance</h4>
+                    <p>Optimized assets and vanilla JS for quick load times.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>🔒 Local Data Storage</h4>
+                    <p>Securely save data directly to your browser.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>🔍 SEO Optimized</h4>
+                    <p>Semantic HTML structure for better search rankings.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>✨ Interactive UI</h4>
+                    <p>Smooth animations and hover effects for better UX.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>♿ Accessibility</h4>
+                    <p>Built with ARIA labels and focus states in mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section bg-darker">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2 class="section-title">Get In Touch</h2>
+                <p>Have a project in mind or want to learn more? Fill out the form and we'll get back to you shortly.
+                </p>
+            </div>
+            <div class="contact-form-wrapper">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]+" required placeholder="1234567890">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="How can we help?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>Responsive<span>Pro</span></h3>
+                <p>Building the web of tomorrow, today.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="GitHub">🐙</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ResponsivePro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Message sent successfully!</div>
+
+    <script src="js/script.js"></script>
+</body>

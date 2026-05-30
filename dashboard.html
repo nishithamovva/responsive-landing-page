@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Messages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css"> <!-- Base styles -->
+    <link rel="stylesheet" href="admin.css"> <!-- Admin specific styles -->
+</head>
+<body>
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Admin<span>Panel</span></h2>
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="#" class="active">Messages</a></li>
+                <li><a href="../index.html">Back to Site</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-content">
+            <header class="admin-header">
+                <h1>Contact Messages</h1>
+                <div class="stats">
+                    <div class="stat-card">
+                        <span class="stat-label">Total Messages</span>
+                        <span class="stat-value" id="total-count">0</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search by name or email...">
+            </div>
+
+            <div class="table-container">
+                <table class="messages-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Message</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="messages-tbody">
+                        <!-- Rows injected via JS -->
+                    </tbody>
+                </table>
+                <div id="empty-state" class="empty-state" style="display: none;">
+                    <p>No messages found.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast">Action successful</div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
